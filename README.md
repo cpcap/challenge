@@ -87,7 +87,7 @@ Errors:
 
       404 if there is no transaction associated with $transaction_id
 
-### Get a transaction IDs by type
+### Get transaction IDs by type
 
 Request:
 
