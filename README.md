@@ -1,5 +1,9 @@
 # Transaction service
 
+Quickstart:
+
+    git clone git@github.com:cpcap/challenge.git && cd challenge && mvn clean package exec:java
+
 This is a small service to manipulate transactions. Specifically, it offers endpoints to:
 
 1. Create a transaction
@@ -61,7 +65,8 @@ Response (201):
     { "status": "ok" }
 
 Errors:
-    2. 400, if amount of type are not provide or parent_id does not exist
+
+      400, if amount of type are not provide or parent_id does not exist
 
 
 ### Get a transaction
@@ -79,7 +84,8 @@ Response (200):
         }
 
 Errors:
-    2. 404 if there is no transaction associated with $transaction_id
+
+      404 if there is no transaction associated with $transaction_id
 
 ### Get a transaction IDs by type
 
@@ -104,7 +110,7 @@ Response (200):
 
 Returns:
 
-    1. 404 if there is no transaction associated with $transaction_id
+  404 if there is no transaction associated with $transaction_id
 
 
 
